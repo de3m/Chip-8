@@ -30,7 +30,7 @@ class Renderer {
 
         if (y > this.rows) {
             y -= this.rows;
-        } else if (y < this.rows) {
+        } else if (y < 0) {
             y += this.rows;
         }
 
@@ -73,6 +73,12 @@ class Renderer {
             }
         }
     
+    }
+
+
+    testRender() {
+        this.setPixel(0,0);
+        this.setPixel(5.2);
     }
 
 }
